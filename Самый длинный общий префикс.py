@@ -14,9 +14,8 @@ def f(a):
     pre = a[0][0: i]
     return pre
 
-k = int(input('Введите количество слов: '))
+k = int(input())
 s = []
-print('Введите слова: ')
 for i in range(k):
     s.append(input())
-print('Самый длинный общий префикс: ' + f(s))
+print(f(s))

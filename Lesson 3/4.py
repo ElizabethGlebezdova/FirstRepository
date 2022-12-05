@@ -27,6 +27,7 @@ match isComplex:
         else:
             print('Вычисляем дискриминант:')
             D = b**2 - 4 * a * c
+            print('D = b^2 - 4ac = ', b, '^2 - 4*', a, '*', c, ' = ', D)
             if (D == 0):
                 print('Находим корень: ')
                 x = -b/(2*a)
@@ -34,9 +35,9 @@ match isComplex:
             else:
                 print('Находим корни: ')
                 x1 = (-b + cmath.sqrt(D))/(2*a)
-                print('x1 = (-b + sqrt(D)) / 2a = ', -b, ' + ', cmath.sqrt(D), ' / 2*', a, ' = ', x1)
+                print('x1 = (-b + sqrt(D)) / 2a = (', -b, ' + ', cmath.sqrt(D), ') / 2*', a, ' = ', x1)
                 x2 = (-b - cmath.sqrt(D))/(2*a)
-                print('x2 = (-b + sqrt(D)) / 2a = ', -b, ' + ', cmath.sqrt(D), ' / 2*', a, ' = ', x2)
+                print('x2 = (-b + sqrt(D)) / 2a = (', -b, ' + ', cmath.sqrt(D), ') / 2*', a, ' = ', x2)
     case '2':
         print('Введите коэффициенты: ')
         a, b, c = float(input('a = ')), float(input('b = ')), float(input('c = '))
@@ -61,12 +62,12 @@ match isComplex:
             elif (D > 0):
                 print('Находим корни: ')
                 x1 = (-b + sqrt(D))/(2*a)
-                print('x1 = (-b + sqrt(D)) / 2a = %.2f + %.2f / 2*%.2f = %.2f' % (-b, sqrt(D), a, x1))
+                print('x1 = (-b + sqrt(D)) / 2a = (%.2f + %.2f) / 2*%.2f = %.2f' % (-b, sqrt(D), a, x1))
                 x2 = (-b - sqrt(D))/(2*a)
-                print('x2 = (-b - sqrt(D)) / 2a = %.2f - %.2f / 2*%.2f = %.2f' % (-b, sqrt(D), a, x2))
+                print('x2 = (-b - sqrt(D)) / 2a = (%.2f - %.2f) / 2*%.2f = %.2f' % (-b, sqrt(D), a, x2))
             else:
                 print('Находим корни: ')
                 x1 = (-b + cmath.sqrt(D))/(2*a)
-                print('x1 = (-b + sqrt(D)) / 2a = %.2f' % (-b), ' + ', cmath.sqrt(D), ' / 2*%.2f' % (a), ' = ', x1)
+                print('x1 = (-b + sqrt(D)) / 2a = (%.2f' % (-b), ' + ', cmath.sqrt(D), ') / 2*%.2f' % (a), ' = ', x1)
                 x2 = (-b - cmath.sqrt(D))/(2*a)
-                print('x2 = (-b + sqrt(D)) / 2a = %.2f' % (-b), ' + ', cmath.sqrt(D), ' / 2*%.2f' % (a), ' = ', x2)
+                print('x2 = (-b + sqrt(D)) / 2a = (%.2f' % (-b), ' + ', cmath.sqrt(D), ') / 2*%.2f' % (a), ' = ', x2)

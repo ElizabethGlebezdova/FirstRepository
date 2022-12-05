@@ -26,8 +26,8 @@ else:
     elif (D > 0):
         print('Находим корни: ')
         x1 = (-b + sqrt(D))/(2*a)
-        print('x1 = (-b + sqrt(D)) / 2a = %.2f + %.2f / 2*%.2f = %.2f' % (-b, sqrt(D), a, x1))
+        print('x1 = (-b + sqrt(D)) / 2a = (%.2f + %.2f) / 2*%.2f = %.2f' % (-b, sqrt(D), a, x1))
         x2 = (-b - sqrt(D))/(2*a)
-        print('x2 = (-b - sqrt(D)) / 2a = %.2f - %.2f / 2*%.2f = %.2f' % (-b, sqrt(D), a, x2))
+        print('x2 = (-b - sqrt(D)) / 2a = (%.2f - %.2f) / 2*%.2f = %.2f' % (-b, sqrt(D), a, x2))
     else:
         print('D < 0, нет корней!')

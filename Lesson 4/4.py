@@ -28,7 +28,7 @@ while(command != '4'):
             print('Введена неверная команда! Попробуй еще раз')
     command = input('\nЧто хотите сделать?\n1. добавить предмет в инвентарь\n2. удалить предмет из инвентаря\n3. узнать вес инвентаря\n4. вывести содержимое инвентаря\n')
 print('Содержимое инвентаря, сортированное по весу:')
-dict(sorted(inventory.items(), key=lambda item: item[1]))
-for i, w in inventory.items():
+sorted_inventory = dict(sorted(inventory.items(), key=lambda item: item[1]))
+for i, w in sorted_inventory.items():
     print(i, ':', w)
 

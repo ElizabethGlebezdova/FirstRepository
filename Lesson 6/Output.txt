@@ -1,0 +1,1 @@
+The maximum possible number of alcohol molecules that can be obtained from the atoms represented in the input data: 7

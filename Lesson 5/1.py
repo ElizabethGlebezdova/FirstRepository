@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 
 def check_passwd(password):
+    """Проверка пароля
+
+    Принимает:
+        password = строка пароля
+    Возвращает:
+        true - пароль корректный
+        false - пароль некорректный
+    """
     check = True
     if (len(password) < 6):
         print('Пароль должен быть не менее 6 символов!')

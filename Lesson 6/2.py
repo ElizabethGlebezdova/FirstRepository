@@ -7,7 +7,9 @@ try:
         alcMolDict['C'] = int(file.readline())
         alcMolDict['H'] = int(file.readline())
         alcMolDict['O'] = int(file.readline())
-    while (alcMolDict['C'] - 2 >= 0) and (alcMolDict['H'] - 6 >= 0) and (alcMolDict['O'] - 1 >= 0):
+    while ((alcMolDict['C'] - 2 >= 0) and
+           (alcMolDict['H'] - 6 >= 0) and 
+           (alcMolDict['O'] - 1 >= 0)):
             count += 1
             alcMolDict['C'] -= 2
             alcMolDict['H'] -= 6

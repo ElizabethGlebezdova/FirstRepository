@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def f(a):
+    """Находит самый длинный общий префикс в списке слов"""
     size = len(a)
     if (size == 0):
         return ""

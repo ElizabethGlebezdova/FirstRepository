@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def sum():
+    """Находит сумму чисел"""
     sum = 0
     while True:
         try:

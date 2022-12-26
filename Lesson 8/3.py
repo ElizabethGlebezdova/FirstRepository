@@ -34,19 +34,21 @@ class Student(human):
 
     def __cmp__ (self, other):
         if (self.completed_homeworks > other.completed_homeworks):
-            return f"{self.name} has a larger number of completed homework assignments than {other.name}"
+            return 1
         elif (self.completed_homeworks < other.completed_homeworks):
-           return f"{other.name} has a larger number of completed homework assignments than {self.name}"
+           return -1
         else:
-            return f"{self.name} and {other.name} have the same number of completed homework assignments"
+            return 0
 
-import itertools
 
-Mark = Student("Mark", 21, 60, 165, "IVT", 3, 5)
+Mark = Student("Mark", 21, 60, 165, "IVT", 3, 4)
 Sara = Student("Sara", 22, 56, 170, "Philology", 4, 7)
 John = Student("John", 19, 64, 168, "Economics", 2, 0)
 Anton = Student("Anton", 21, 70, 180, "IVT", 3, 4)
-print(Mark.__cmp__(Anton))
-print(Sara.__cmp__(John))
-print(Anton.__cmp__(John))
-print(John.__cmp__(Mark))
+for student in (Mark, Sara, John):
+    if (Anton.__cmp__(student) == 1):
+        print(f"{Anton.name} has a larger number of completed homework assignments than {student.name}")
+    elif (Anton.__cmp__(student) == -1):
+        print(f"{student.name} has a larger number of completed homework assignments than {Anton.name}")
+    else:
+        print(f"{Anton.name} and {student.name} have the same number of completed homework assignments")
